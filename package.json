@@ -1,0 +1,23 @@
+{
+  "name": "creordics.org",
+  "version": "1.0.0",
+  "description": "creordics.org",
+  "main": "index.html",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "serve": "serve dist",
+    "dev": "run-p tailwind serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e10jon/creordics.org.git"
+  },
+  "author": "Ethan Jon",
+  "license": "ISC",
+  "homepage": "https://creordics.org",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "serve": "^14.2.3",
+    "tailwindcss": "^3.4.4"
+  }
+}
