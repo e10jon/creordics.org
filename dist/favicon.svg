@@ -1,0 +1,20 @@
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Entropy (right arrow) -->
+  <line x1="10" y1="50" x2="100" y2="50" stroke="#888" stroke-width="8" marker-end="url(#arrowR)"/>
+  <!-- Meaning (left arrow) -->
+  <line x1="190" y1="50" x2="100" y2="50" stroke="#444" stroke-width="8" marker-end="url(#arrowL)"/>
+
+  <!-- Shared center circle -->
+  <circle cx="100" cy="50" r="12" fill="#444"/>
+
+  <defs>
+    <!-- Right arrowhead -->
+    <marker id="arrowR" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#888"/>
+    </marker>
+    <!-- Left arrowhead -->
+    <marker id="arrowL" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#444"/>
+    </marker>
+  </defs>
+</svg>

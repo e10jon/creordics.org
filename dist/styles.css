@@ -633,6 +633,19 @@ h2 {
   margin-top: 1rem;
 }
 
+.size-32 {
+  width: 8rem;
+  height: 8rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
 .max-w-screen-md {
   max-width: 768px;
 }
@@ -659,6 +672,10 @@ h2 {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-sm {
