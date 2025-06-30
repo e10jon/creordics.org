@@ -4,279 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creordics - Thermodynamic Foundations of Order Creation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            background: #fff;
-        }
-        
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 196, 0.05) 0%, transparent 70%);
-            animation: pulse 20s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .logo {
-            font-size: 3rem;
-            font-weight: 300;
-            letter-spacing: 0.2em;
-            margin-bottom: 1rem;
-            color: #1e293b;
-        }
-        
-        .tagline {
-            font-size: 1.25rem;
-            color: #64748b;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        
-        .symbol {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 3rem;
-            opacity: 0.8;
-        }
-        
-        /* Content Sections */
-        .section {
-            padding: 5rem 0;
-        }
-        
-        .section:nth-child(even) {
-            background: #f8f9fa;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            margin-bottom: 2rem;
-            color: #1e293b;
-            text-align: center;
-        }
-        
-        .content-block {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .research-questions {
-            list-style: none;
-            margin: 2rem 0;
-        }
-        
-        .research-questions li {
-            padding: 1rem 0;
-            border-bottom: 1px solid #e2e8f0;
-            font-size: 1.1rem;
-            color: #475569;
-        }
-        
-        .research-questions li:last-child {
-            border-bottom: none;
-        }
-        
-        .hook-text {
-            font-size: 1.15rem;
-            line-height: 1.8;
-            color: #334155;
-            margin-bottom: 1.5rem;
-        }
-        
-        .emphasis {
-            color: #3b82c4;
-            font-weight: 500;
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            color: white;
-            text-align: center;
-            padding: 4rem 0;
-        }
-        
-        .cta-section h2 {
-            color: white;
-        }
-        
-        .expertise-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-        
-        .expertise-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.5rem 1.5rem;
-            border-radius: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .contact-info {
-            margin-top: 3rem;
-            font-size: 1.1rem;
-        }
-        
-        .contact-info a {
-            color: #60a5fa;
-            text-decoration: none;
-            border-bottom: 1px solid #60a5fa;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-info a:hover {
-            color: #93c5fd;
-            border-bottom-color: #93c5fd;
-        }
-        
-        /* Footer */
-        .footer {
-            padding: 2rem 0;
-            text-align: center;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 2rem;
-            }
-            
-            .tagline {
-                font-size: 1rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-800">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="logo">CREORDICS</h1>
-            <p class="tagline">The thermodynamic foundations of order creation</p>
+    <section class="flex items-center justify-center bg-gray-50 py-8">
+        <div class="text-center px-6">
+            <h1 class="text-6xl font-light tracking-widest text-gray-900 mb-4">CREORDICS</h1>
+            <p class="text-xl text-gray-600">The thermodynamic foundations of order creation</p>
         </div>
     </section>
     
     <!-- Introduction Section -->
-    <section class="section">
-        <div class="container">
-            <div class="content-block">
-                <p class="hook-text">
-                    A research initiative exploring how complex systems—from cells to societies—create order through fundamental thermodynamic principles. We're building a network of scientists to investigate the <span class="emphasis">universal patterns</span> governing energy, information, and organization.
-                </p>
-                <p class="hook-text">
-                    Recent advances in non-equilibrium thermodynamics suggest a unifying principle underlying all self-organizing systems. From Prigogine's dissipative structures to Bejan's constructal law, evidence points toward a <span class="emphasis">deeper pattern</span> waiting to be formalized.
-                </p>
-            </div>
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg leading-relaxed mb-6">
+                A research initiative exploring how complex systems—from cells to societies—create order through fundamental thermodynamic principles. We're building a network of scientists to investigate the <span class="text-blue-600 font-medium">universal patterns</span> governing energy, information, and organization.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Recent advances in non-equilibrium thermodynamics suggest a unifying principle underlying all self-organizing systems. From Prigogine's dissipative structures to Bejan's constructal law, evidence points toward a <span class="text-blue-600 font-medium">deeper pattern</span> waiting to be formalized.
+            </p>
         </div>
     </section>
     
     <!-- Research Questions Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Core Research Questions</h2>
-            <div class="content-block">
-                <ul class="research-questions">
-                    <li>How do systems optimize exergy extraction across multiple scales?</li>
-                    <li>What role does consciousness play in accelerating entropy production?</li>
-                    <li>Can we quantify the thermodynamic efficiency of decision-making processes?</li>
-                    <li>How does information processing relate to gradient exploitation in living systems?</li>
-                    <li>What are the fundamental limits of order creation in finite-energy environments?</li>
-                </ul>
-            </div>
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-light text-center mb-12">Core Research Questions</h2>
+            <ul class="space-y-4">
+                <li class="text-lg py-4 border-b border-gray-200">How do systems optimize exergy extraction across multiple scales?</li>
+                <li class="text-lg py-4 border-b border-gray-200">What role does consciousness play in accelerating entropy production?</li>
+                <li class="text-lg py-4 border-b border-gray-200">Can we quantify the thermodynamic efficiency of decision-making processes?</li>
+                <li class="text-lg py-4 border-b border-gray-200">How does information processing relate to gradient exploitation in living systems?</li>
+                <li class="text-lg py-4">What are the fundamental limits of order creation in finite-energy environments?</li>
+            </ul>
         </div>
     </section>
     
     <!-- About Section -->
-    <section class="section">
-        <div class="container">
-            <h2>About the Initiative</h2>
-            <div class="content-block">
-                <p class="hook-text">
-                    Founded by <span class="emphasis">Ethan Jon</span>, an entrepreneur and systems thinker with 15+ years in technology and a passion for understanding complex systems. This initiative combines rigorous scientific inquiry with practical applications across disciplines.
-                </p>
-                <p class="hook-text">
-                    Our initial focus: developing a <span class="emphasis">mathematical framework</span> that unifies existing theories while making testable predictions about system behavior and evolution.
-                </p>
-            </div>
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-light text-center mb-12">About the Initiative</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Founded by <span class="text-blue-600 font-medium">Ethan Jon</span>, an entrepreneur and systems thinker with 15+ years in technology and a passion for understanding complex systems. This initiative combines rigorous scientific inquiry with practical applications across disciplines.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Our initial focus: developing a <span class="text-blue-600 font-medium">mathematical framework</span> that unifies existing theories while making testable predictions about system behavior and evolution.
+            </p>
         </div>
     </section>
     
     <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Join the Network</h2>
-            <p class="hook-text" style="color: #e2e8f0;">
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-light mb-8">Join the Network</h2>
+            <p class="text-lg text-gray-300 mb-8">
                 Seeking collaborators with expertise in:
             </p>
-            <div class="expertise-list">
-                <div class="expertise-item">Thermodynamics</div>
-                <div class="expertise-item">Complex Systems</div>
-                <div class="expertise-item">Theoretical Biology</div>
-                <div class="expertise-item">Statistical Mechanics</div>
-                <div class="expertise-item">Information Theory</div>
-                <div class="expertise-item">Nonlinear Dynamics</div>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Thermodynamics</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Complex Systems</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Theoretical Biology</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Statistical Mechanics</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Information Theory</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20">Nonlinear Dynamics</span>
             </div>
-            <p class="hook-text" style="color: #e2e8f0; margin-top: 2rem;">
+            <p class="text-lg text-gray-300 mb-8">
                 Funding available for white paper development and research collaboration.
             </p>
-            <div class="contact-info">
-                <p>Contact: <a href="mailto:ethan@ethanjon.net">ethan@ethanjon.net</a></p>
-            </div>
+            <p class="text-lg">
+                Contact: <a href="mailto:ethan@ethanjon.net" class="text-blue-400 hover:text-blue-300 underline">ethan@ethanjon.net</a>
+            </p>
         </div>
     </section>
     
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Creordics. A research initiative in thermodynamic order creation.</p>
-        </div>
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Creordics. A research initiative in thermodynamic order creation.</p>
     </footer>
 </body>
 </html>
