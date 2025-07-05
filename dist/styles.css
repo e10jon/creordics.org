@@ -19,6 +19,7 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-2xl: 42rem;
+    --container-4xl: 56rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -222,8 +223,17 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
+  .hidden {
+    display: none;
+  }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .grow {
+    flex-grow: 1;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
