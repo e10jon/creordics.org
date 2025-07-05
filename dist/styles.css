@@ -299,6 +299,10 @@
   .hidden {
     display: none;
   }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
   .size-12 {
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
@@ -306,17 +310,11 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
-  }
   .h-screen {
     height: 100vh;
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
   }
   .w-full {
     width: 100%;
@@ -336,9 +334,6 @@
   .flex-1 {
     flex: 1;
   }
-  .grow {
-    flex-grow: 1;
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -351,9 +346,6 @@
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -370,14 +362,8 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
-  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -410,12 +396,6 @@
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
   }
-  .gap-x-4 {
-    column-gap: calc(var(--spacing) * 4);
-  }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -437,9 +417,6 @@
   .border-blue-200 {
     border-color: var(--color-blue-200);
   }
-  .border-blue-400 {
-    border-color: var(--color-blue-400);
-  }
   .border-blue-600 {
     border-color: var(--color-blue-600);
   }
@@ -449,41 +426,20 @@
   .border-green-200 {
     border-color: var(--color-green-200);
   }
-  .border-green-500 {
-    border-color: var(--color-green-500);
-  }
   .border-orange-200 {
     border-color: var(--color-orange-200);
-  }
-  .border-orange-500 {
-    border-color: var(--color-orange-500);
   }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
   }
-  .bg-blue-400 {
-    background-color: var(--color-blue-400);
-  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
-  }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
-  }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
   }
-  .bg-green-900 {
-    background-color: var(--color-green-900);
-  }
   .bg-orange-50 {
     background-color: var(--color-orange-50);
-  }
-  .bg-orange-900 {
-    background-color: var(--color-orange-900);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -532,17 +488,9 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -564,14 +512,6 @@
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
   }
-  .leading-tight {
-    --tw-leading: var(--leading-tight);
-    line-height: var(--leading-tight);
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
@@ -579,10 +519,6 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
-  }
-  .font-normal {
-    --tw-font-weight: var(--font-weight-normal);
-    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -592,23 +528,11 @@
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
   }
-  .text-blue-400 {
-    color: var(--color-blue-400);
-  }
   .text-blue-600 {
     color: var(--color-blue-600);
   }
   .text-blue-700 {
     color: var(--color-blue-700);
-  }
-  .text-cyan-400 {
-    color: var(--color-cyan-400);
-  }
-  .text-gray-100 {
-    color: var(--color-gray-100);
-  }
-  .text-gray-400 {
-    color: var(--color-gray-400);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -622,28 +546,12 @@
   .text-gray-800 {
     color: var(--color-gray-800);
   }
-  .text-green-400 {
-    color: var(--color-green-400);
-  }
-  .text-orange-400 {
-    color: var(--color-orange-400);
-  }
   .italic {
     font-style: italic;
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .transition-all {
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -654,13 +562,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-blue-100);
-      }
-    }
-  }
-  .hover\:bg-blue-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-400);
       }
     }
   }
