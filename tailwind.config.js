@@ -1,9 +1,9 @@
-/** @type {import('tailwindcss').Config} */
+import { defineConfig } from 'tailwindcss'
 
-module.exports = {
+export default defineConfig({
   content: ["dist/*.html"],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+})
