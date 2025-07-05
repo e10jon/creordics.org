@@ -1,0 +1,56 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions -->
+  <defs>
+    <radialGradient id="centerGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3c72;stop-opacity:0.3" />
+    </radialGradient>
+    
+    <radialGradient id="outerGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" style="stop-color:#1e3c72;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#1e3c72;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Nested systems -->
+  <g transform="translate(100,100)">
+    <!-- Outermost system -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#1e3c72" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Gradient flow indicators -->
+    <circle cx="0" cy="0" r="80" fill="url(#outerGradient)" opacity="0.5"/>
+    
+    <!-- Third system -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#1e3c72" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Second system -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#1e3c72" stroke-width="3" opacity="0.7"/>
+    
+    <!-- Innermost system -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#1e3c72" stroke-width="4" opacity="0.9"/>
+    
+    <!-- Central core -->
+    <circle cx="0" cy="0" r="25" fill="url(#centerGradient)"/>
+    
+    <!-- Coupling points showing energy flow -->
+    <g opacity="0.6">
+      <!-- Flow from center outward -->
+      <circle cx="0" cy="-35" r="3" fill="#1e3c72"/>
+      <circle cx="35" cy="0" r="3" fill="#1e3c72"/>
+      <circle cx="0" cy="35" r="3" fill="#1e3c72"/>
+      <circle cx="-35" cy="0" r="3" fill="#1e3c72"/>
+      
+      <!-- Outer coupling points -->
+      <circle cx="0" cy="-55" r="2.5" fill="#1e3c72" opacity="0.8"/>
+      <circle cx="55" cy="0" r="2.5" fill="#1e3c72" opacity="0.8"/>
+      <circle cx="0" cy="55" r="2.5" fill="#1e3c72" opacity="0.8"/>
+      <circle cx="-55" cy="0" r="2.5" fill="#1e3c72" opacity="0.8"/>
+      
+      <!-- Outermost indicators -->
+      <circle cx="0" cy="-75" r="2" fill="#1e3c72" opacity="0.6"/>
+      <circle cx="75" cy="0" r="2" fill="#1e3c72" opacity="0.6"/>
+      <circle cx="0" cy="75" r="2" fill="#1e3c72" opacity="0.6"/>
+      <circle cx="-75" cy="0" r="2" fill="#1e3c72" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
